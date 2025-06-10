@@ -1,12 +1,47 @@
-# React + Vite
+🧑‍🍳 Chef Claude
+Chef Claude is an AI-powered recipe generator that helps you cook something delicious using ingredients you already have at home. Just type in a few ingredients, and Claude (Anthropic AI) will suggest a recipe, formatted in Markdown for easy reading and sharing.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live demo: https://chefcluade.netlify.app
 
-Currently, two official plugins are available:
+📌 Features
+Add your ingredients manually
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Get an AI-generated recipe based on what you have
 
-## Expanding the ESLint configuration
+Optional: choose servings, cuisine, or add extra instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clean, responsive UI with nicely formatted Markdown output
+
+🛠 Tech Stack
+React + Vite — for a fast, modern frontend
+
+Anthropic Claude API — natural language generation
+
+Markdown rendering — clean and readable recipe output
+
+⚙️ Usage
+Enter at least 4 ingredients in the input field.
+
+Click the “Get a recipe” button.
+
+Wait a few seconds for Claude to generate a recipe.
+
+The recipe will appear, fully formatted in Markdown.
+
+📄 License
+MIT License. See LICENSE for details.
+
+🔐 Notes on API Keys
+This project uses the Anthropic Claude API.
+For security reasons, your API key should never be exposed in the frontend.
+Use a backend (like Express.js or a serverless function on Netlify) to securely proxy API requests and keep your ANTHROPIC_API_KEY hidden.
+
+
+
+
+
+
+
+
+
+
